@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	{% include 'search-bar.html' %}
+{% endblock %}
+
+
+{% block main %}
+<div class="not-found">
+	<h1 class="text-fixed">Anime Not Found😖, try a different name</h1>
+	<img src="{{ url_for('static', filename='img/not_found.webp')}}" class="img-fixed" alt="">
+	<a href="{{ url_for('index') }}" alt=""><button id="send-home"  aria-label="return to home">Return to home</button></a>
+</div>
+{% endblock %}

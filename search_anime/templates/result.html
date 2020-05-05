@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	{% include 'search-bar.html' %}
+{% endblock %}
+
+
+{% block main %}
+			<section id="poster">
+				<img src="{{ anime_img }}" alt="poster">
+			</section>
+				<section id="info">
+					<h1><strong>{{ anime_name }}</strong></h1>
+					<b>{{ anime_jap }}</b>
+					<p class="date">{{ anime_date }}</p>
+				</section>
+				<section id="streaming">
+					{% for site, link in anime_list: %}
+					{% set imgs = 'img/' + site.lower() + '.webp' %}
+					<a href="{{ link }}">
+						<div class="website">
+							<img src="{{ url_for('static', filename=imgs) }}" alt="">
+							<p class="{{ site.lower() }}">{{ site }}</p>
+						</div>
+					</a>
+					{% endfor %}
+					{% if anime_site[0] == 'unknown':%}
+					<div class="website">
+						<img src="{{ url_for('static', filename='img/unknown.webp') }}" alt="">
+						<p>Unavailable</p>
+					</div>
+					{% endif %}
+				</section>
+{% endblock %}
