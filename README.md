@@ -7,7 +7,7 @@ The link to the site [Anime Search](https://emmanuel-cse17019.herokuapp.com/).
 
 
 ## The application has 3 pages:
-- The * home * page for searching for a series.
+- The *home* page for searching for a series.
 - The * results display * page which shows the results corresponding to our search.
 - The page of * details * of a series, where you can see information about the series.
 
