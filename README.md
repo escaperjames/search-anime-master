@@ -1,22 +1,17 @@
 ﻿# Anime Search
-**Anime Search** est une application Flask de webscraping permettant de savoir sur quelle platforme de streaming légale on peut visionner la série d'animation que l'on recherche.
+**Anime Search** is a Flask web scraping application allowing you to find out on which legal streaming platform you can watch the animation series you are looking for.
 
-Les données sont récupérées depuis le site de [Nautiljon](https://www.nautiljon.com/).
+The data is retrieved from the [Nautiljon] website (https://www.nautiljon.com/).
 
-![Page accueil](https://cloud-image-dlcn.netlify.com/anime-search/home.png)
+The link to the site [Anime Search](https://emmanuel-cse17019.herokuapp.com/).
 
-Le lien vers le site [Anime Search](https://search-anime.herokuapp.com/).
 
-Cette application m'a permis d'apprendre à faire du webscraping et de m'améliorer en Flask.
+## The application has 3 pages:
+- The * home * page for searching for a series.
+- The * results display * page which shows the results corresponding to our search.
+- The page of * details * of a series, where you can see information about the series.
 
-## Fonctionnement
-L'application possède 3 pages:
-- La page d'*accueil* permettant de rechercher une série.
-- La page d'*affichage des résultats* qui montre les résultats correspondant à notre recherche.
-- La page de *détails* d'une série, où l'on peut voir des informations sur la série.
-
-L'application permet aussi de visualiser le détail d'une série plus rapidement au détriment de la qualité d'image en activant le bouton *"Speed Mode"* dans la page de recherche.
-
+The application also allows you to view the details of a series more quickly at the expense of image quality by activating the * "Speed Mode" * button on the search page.
 
 ## Technologies utilisées
 - Le micro-framework Flask
@@ -27,5 +22,5 @@ L'application permet aussi de visualiser le détail d'une série plus rapidement
 	- lxml (Parser)
 	- requests (requête HTTP)
 	- gunicorn (déploiement en production)
-## Déploiement de l'application
-L'application à été déployé sur [Heroku](https://heroku.com) qui permet de déployer gratuitement des applications webs (NodeJS, Python, Java, Go, PHP, ...)
+## Application deployment
+The application has been deployed on [Heroku] (https://heroku.com) which allows free deployment of web applications (NodeJS, Python, Java, Go, PHP, ...)
