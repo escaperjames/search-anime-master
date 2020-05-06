@@ -13,14 +13,21 @@ The link to the site [Anime Search](https://emmanuel-cse17019.herokuapp.com/).
 
 The application also allows you to view the details of a series more quickly at the expense of image quality by activating the * "Speed Mode" * button on the search page.
 
-## Technologies utilisées
-- Le micro-framework Flask
-- Le langage Python 3.8
-- L'installeur de paquets pip 20.1
-- Bibliothèque Python :
-	- Beautiful Soup 4 (Webscraping)
-	- lxml (Parser)
-	- requests (requête HTTP)
-	- gunicorn (déploiement en production)
+## Concepts Used
+•	Python Basics
+•	Flask: 
+	o	Session
+	o	Cookies
+	o	Error
+	o	Redirect
+	o	url_for
+•	Beautiful Soup
+	o	Beautiful Soup 4 (Webscraping)
+	o	lxml (Parser)
+	o	requests (request HTTP)
+	o	gunicorn (deployment in production)
+	
+•	Heroku
+	o	Deployed the application in cloud platform
 ## Application deployment
 The application has been deployed on [Heroku] (https://heroku.com) which allows free deployment of web applications (NodeJS, Python, Java, Go, PHP, ...)
